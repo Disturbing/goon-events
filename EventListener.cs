@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Toolbox.Events
+namespace Goon.Events
 {
     /// <summary>
     /// Attribute flag on Private methods to register the method as a listener for a particular event

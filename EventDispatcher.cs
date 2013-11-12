@@ -1,9 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Reflection;
-using UnityEngine;
 
-namespace Toolbox.Events
+namespace Goon.Events
 {
     /// <summary>
     /// Dispatches custom events to methods flagged with EventListener attribute.
@@ -94,7 +93,7 @@ namespace Toolbox.Events
             }
             else
             {
-                Debug.LogError(string.Format("Flagged EventListener {0}#{1} has invalid MethodParameters",
+                throw new Exception(string.Format("Flagged EventListener {0}#{1} has invalid MethodParameters",
                                              eventListenerInstance.GetType().FullName,
                                              methodInfo.Name));
             }
