@@ -41,11 +41,38 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="..\..\Event.cs">
+      <Link>Event.cs</Link>
+    </Compile>
+    <Compile Include="..\..\EventDispatcher.cs">
+      <Link>EventDispatcher.cs</Link>
+    </Compile>
+    <Compile Include="..\..\EventListener.cs">
+      <Link>EventListener.cs</Link>
+    </Compile>
+    <Compile Include="..\..\UnityEventListeners\UnityApplicationFocusEvent.cs">
+      <Link>UnityEventListeners\UnityApplicationFocusEvent.cs</Link>
+    </Compile>
+    <Compile Include="..\..\UnityEventListeners\UnityApplicationPauseEvent.cs">
+      <Link>UnityEventListeners\UnityApplicationPauseEvent.cs</Link>
+    </Compile>
+    <Compile Include="..\..\UnityEventListeners\UnityFixedUpdateEvent.cs">
+      <Link>UnityEventListeners\UnityFixedUpdateEvent.cs</Link>
+    </Compile>
+    <Compile Include="..\..\UnityEventListeners\UnityLateUpdateEvent.cs">
+      <Link>UnityEventListeners\UnityLateUpdateEvent.cs</Link>
+    </Compile>
+    <Compile Include="..\..\UnityEventListeners\UnityStartEvent.cs">
+      <Link>UnityEventListeners\UnityStartEvent.cs</Link>
+    </Compile>
+    <Compile Include="..\..\UnityEventListeners\UnityUpdateEvent.cs">
+      <Link>UnityEventListeners\UnityUpdateEvent.cs</Link>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <Content Include="Test\.gitignore" />
+    <Content Include="UnityEventListeners\.gitignore" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
